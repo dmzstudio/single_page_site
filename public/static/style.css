@@ -1,0 +1,106 @@
+/* Base styles */
+:root {
+    --primary-color: #333;
+    --secondary-color: #4caf50;
+    --text-color: #666;
+    --bg-alt: #f8f9fa;
+    --nav-height: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background: #333;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a.active {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 0; /* Remove the margin since sections will account for nav */
+}
+
+/* Layout */
+
+.section {
+    height: 100vh; /* Full viewport height */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Add padding-top to account for fixed nav */
+.section:first-child {
+    padding-top: calc(60px + 2rem); /* nav height + padding */
+}
+
+.section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Content container within each section */
+.section-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Typography */
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    /* your styles */
+    color: #333;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Components */
+/*.button {if you need buttons }*/
+/*.card {if you need cards }*/
+
+/* Section-specific styles */
+/*#home {home-specific styles }*/
+/*#about {about-specific styles}*/

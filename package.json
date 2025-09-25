@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start": "bun run server.js",
-    "dev": "bun --watch run server.js"
+    "dev": "bun --watch run server.js",
+    "build": "echo 'Build completed - static files ready'"
   }
 }
